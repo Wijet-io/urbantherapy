@@ -147,9 +147,6 @@ const Hero = () => {
             <h2 className="text-heading text-xl md:text-2xl text-text-secondary mb-6 text-center">
               Ma proposition :
             </h2>
-            <p className="text-body text-lg md:text-xl text-gray-500 mb-8">
-              <strong className="text-accent">Optimise ton existant</strong> • Unifie tes outils • Pilote en temps réel
-            </p>
           </div>
 
           {/* Gros titre et suite du Hero */}
