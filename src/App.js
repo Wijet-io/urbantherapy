@@ -619,7 +619,7 @@ const BudgetSection = () => {
               <div className="text-heading text-3xl text-accent mb-2">{totalBudget.toLocaleString()}€ HT</div>
               <p className="text-caption">Budget total estimé • Développement sur 4-5 mois</p>
               <p className="text-caption text-sm mt-2">
-                *Prix intégration POS variable selon exploitabilité de l'existant
+                *Prix intégration POS variable selon devis du partenaire et éventuelle exploitabilité de l'existant
               </p>
             </div>
           </div>
@@ -853,11 +853,45 @@ function App() {
       <Header onLogout={handleLogout} />
       <Hero />
       <PotentialSection />
-              <ArchitectureSection />
+        <ArchitectureSection />
         <StrategySection />
         <PilotageSection />
         <BudgetSection />
         <FutureSection />
+        
+        {/* Footer avec copyright et confidentialité */}
+        <footer className="bg-gray-900 text-white py-8">
+          <div className="container-max">
+            <div className="text-center space-y-4">
+              <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div className="flex items-center gap-4">
+                  <img src="/assets/img/urbantherapy.svg" alt="Logo Urban Therapy" className="h-8 w-auto filter invert" />
+                  <span className="text-sm font-medium">Proposition Stratégique</span>
+                </div>
+                <div className="text-sm text-gray-400 space-y-1 md:space-y-0 md:text-right">
+                  <div>Version 1.0 • Janvier 2025</div>
+                  <div>Transformation Digital Retail</div>
+                </div>
+              </div>
+              
+              <div className="border-t border-gray-700 pt-4">
+                <div className="text-xs text-gray-400 space-y-2">
+                  <div className="flex items-center justify-center gap-2">
+                    <span className="w-2 h-2 bg-red-500 rounded-full"></span>
+                    <span className="font-semibold text-red-400">DOCUMENT CONFIDENTIEL</span>
+                  </div>
+                  <p className="max-w-2xl mx-auto leading-relaxed">
+                    Ce document contient des informations confidentielles et propriétaires destinées exclusivement à Urban Therapy. 
+                    Toute reproduction, distribution ou divulgation à des tiers est strictement interdite sans autorisation écrite préalable.
+                  </p>
+                  <div className="text-gray-500 mt-4">
+                    © 2025 Proposition Stratégique - Tous droits réservés
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
     </div>
   );
 }
