@@ -550,7 +550,7 @@ const BudgetSection = () => {
     {
       order: "1",
       title: "Monorepo React Native Web Unifié",
-      badge: "Interface Mobile Ecommerce + Webapp B2C + Webapp B2B",
+      badge: "Application Mobile Ecommerce + Webapp B2C + Webapp B2B",
       description: "Toutes les interfaces dans un seul projet",
       details: [
         "React Native Web (même codebase partout)",
