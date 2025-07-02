@@ -336,6 +336,13 @@ const ArchitectureSection = () => {
 
   return (
     <section className="section-padding bg-background-light">
+      <div className="flex justify-center my-12">
+          <div className="flex items-center gap-4 bg-white rounded-full px-8 py-4 shadow-lg border border-border-light">
+            <span className="text-heading text-accent text-lg">Transformation</span>
+            <ArrowRight className="w-6 h-6 text-accent" />
+            <span className="text-heading text-accent text-lg">Résultats</span>
+          </div>
+        </div>
       <div className="container-max">
         <h2 className="text-display text-4xl md:text-5xl text-text-primary mb-16 text-center">
           Des objectifs précis :
@@ -391,14 +398,6 @@ const ArchitectureSection = () => {
           </div>
         </div>
 
-        {/* Flèche de transformation */}
-        <div className="flex justify-center my-12">
-          <div className="flex items-center gap-4 bg-white rounded-full px-8 py-4 shadow-lg border border-border-light">
-            <span className="text-heading text-accent text-lg">Transformation</span>
-            <ArrowRight className="w-6 h-6 text-accent" />
-            <span className="text-heading text-accent text-lg">Résultats</span>
-          </div>
-        </div>
       </div>
     </section>
   );
