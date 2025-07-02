@@ -59,7 +59,7 @@ const OptionsSimplesSection = () => {
         "Formulaire de contact",
         "Peu d'impact business, juste pour avoir une présence et confirmer l'identité de marque.",
         "Maintenance légère à prévoir",
-        "Coût moyen : 1 800 €"
+        "Coût moyen : 2 000 €"
       ]
     },
     {
@@ -72,8 +72,8 @@ const OptionsSimplesSection = () => {
         "Template basique",
         "Commission Shopify : % + fixe continuellement",
         "Coût moyen : 1 800 €",
-        "Avec personnalisation d'un template Shopify pour se rapprocher de l'identité de marque.",
-        "Coût moyen : 2 800 €"
+        "Avec personnalisation limitée d'un template Shopify pour se rapprocher de l'identité de marque.",
+        "Coût moyen : 3 500 €"
       ]
     },
     {
@@ -84,7 +84,7 @@ const OptionsSimplesSection = () => {
         "Nécessité de retravailler le template du catalogue, pages catégories & produits, panier, checkout, etc. pour la cohérence",
         "Deux outils à gérer, un en react js et l'autre sur Shopify.",
         "Maintenance légère à prévoir",
-        "Coût moyen : 3 800 €"
+        "Coût moyen : 4 500 €"
       ]
     },
     {
@@ -96,7 +96,7 @@ const OptionsSimplesSection = () => {
         "MAIS",
         "Indépendant de toute l'infra actuelle (Comme si tu gérais un second business)",
         "Maintenance technique nécessaire",
-        "Coût moyen : 6 500 €"
+        "Coût moyen : À partir de 12000 € si API paiement et transport uniquement et Admin de base, et jusqu'à 18000 € si ajout de fonctionnalités d'Admin custom ou API Marketing supplémentaires à intégrer."
       ]
     }
   ];
@@ -144,7 +144,12 @@ const Hero = () => {
 
           {/* Séparateur visuel */}
           <div className="text-center my-8">
-            <span className="badge text-base">Ma proposition</span>
+            <h2 className="text-heading text-xl md:text-2xl text-text-secondary mb-6 text-center">
+              Ma proposition :
+            </h2>
+            <p className="text-body text-lg md:text-xl text-gray-500 mb-8">
+              <strong className="text-accent">Optimise ton existant</strong> • Unifie tes outils • Pilote en temps réel
+            </p>
           </div>
 
           {/* Gros titre et suite du Hero */}
@@ -736,7 +741,7 @@ const FutureSection = () => {
             Et <span className="text-accent">après</span> ?
           </h2>
           <p className="text-body text-xl max-w-4xl mx-auto mb-8">
-            Une fois l'écosystème en place, les possibilités d'évolution sont infinies
+            Une fois l'écosystème en place, les possibilités de scaling sont infinies
           </p>
           
           <div className="card-modern p-6 max-w-4xl mx-auto">
